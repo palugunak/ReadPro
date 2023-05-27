@@ -58,7 +58,7 @@ public class character {
     public char lastnonrepeatedChar(String str) {
         int n = str.length();
         HashMap<Character, Integer> hasmap = new HashMap<>();
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < n; i++) {
 
             if (hasmap.containsKey(str.charAt(i))) {
                 int count = hasmap.get(str.charAt(i));
