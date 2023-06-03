@@ -1,9 +1,13 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 public class HashMapexample {
 
     public static void main(String args[]){
+
+        HashSet<Integer> set = new HashSet<>();
+
         HashMap<String,String> courseTeacher = new HashMap<>();
 
         courseTeacher.put("History", "Ben");
@@ -11,7 +15,7 @@ public class HashMapexample {
         courseTeacher.put("Physics", "Lily");
 
         System.out.println("course offered online");
-
+        System.out.println("=================================");
         for(String i: courseTeacher.keySet()){
             System.out.println(i);
         }
@@ -29,12 +33,12 @@ public class HashMapexample {
 
         System.out.println("=========================================================");
         HashMap<Integer,String > map = new HashMap<>();
-        map.put(1,"palugun");
-        map.put(2,"ayansh");
-        map.put(3,"thoshi");
-        map.put(4,"sirisha");
-        map.containsKey(4);
-        map.containsValue("palugun");
+        map.put(2,"g");
+        map.put(3,"a");
+        map.put(3,"t");
+        map.put(4,"s");
+     //   map.containsKey(4);
+     //   map.containsValue("palugun");
 
 
 
@@ -42,13 +46,23 @@ public class HashMapexample {
 
 
         //iteration over the hashmap
-
+        System.out.println("==============================");
         for( int item :map.keySet())
         System.out.println(item);
 
+
+
         for(Map.Entry<Integer, String> value:map.entrySet()){
-            System.out.println(value.hashCode());
+
+
+            System.out.println(value.getValue());
         }
+
+
+
+
+
+
 
 
 
